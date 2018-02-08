@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+    prefix: classpath:/html/
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9099/eureka/

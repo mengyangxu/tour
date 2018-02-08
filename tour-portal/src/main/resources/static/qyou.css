@@ -1,0 +1,532 @@
+.qui-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(//static.qyer.com/models/common/images/bg_255_255_255_0.7.png);
+    z-index: 1000;
+    overflow-y: auto;
+    opacity: 0
+}
+
+.qui-popup > div {
+    display: table;
+    height: 100%;
+    margin: 0 auto
+}
+
+.qui-popup-dt {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.qui-popup-box {
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    -webkit-box-shadow: 0 0 6px #aaa;
+    -moz-box-shadow: 0 0 6px #aaa;
+    box-shadow: 0 0 6px #aaa;
+    border: 1px solid #ccc;
+    opacity: 0
+}
+
+.qui-popup-cancelBtn, .qui-popup-loadingBtn, .qui-popup-okBtn {
+    vertical-align: middle;
+    margin-left: 10px
+}
+
+.qui-popup-box-title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px
+}
+
+.qui-popup-box-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px
+}
+
+.qui-popup-box-content > iframe {
+    width: 100%;
+    border: none
+}
+
+.qui-popup-box-bottom {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding-right: 20px
+}
+
+.qui-popup-closeIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-image: url(//static.qyer.com/models/common/ui/popup/ico.png);
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 5px
+}
+
+.qui-popup-closeIcon:hover {
+    background-position: 0 -38px
+}
+
+.qui-popup-loadingBtn {
+    display: none
+}
+
+.qui-tip {
+    position: fixed;
+    top: 75pt;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 1100
+}
+
+.qui-tip-box {
+    display: inline-block;
+    min-width: 90pt;
+    max-width: 390px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .25);
+    border: 1px solid silver;
+    text-align: left;
+    font-size: 18px;
+    line-height: 2pc
+}
+
+.qui-tip-text {
+    display: block;
+    position: relative;
+    padding-left: 34px
+}
+
+.qui-tip-text:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    background: url(//fed.static.qyer.com/core/web/common/resource/ui/oldtip/icons2.png) no-repeat #fff
+}
+
+.qui-tip-box-error .qui-tip-text:before {
+    background-position: 0 -5pc
+}
+
+.qui-tip-box-warning .qui-tip-text:before {
+    background-position: 0 -40px
+}
+
+.qui-textArea {
+    zoom: 1
+}
+
+.qui-textArea .red {
+    color: red
+}
+
+.qui-textArea input, .qui-textArea textarea {
+    word-break: break-all;
+    transition: height .2s;
+    -webkit-transition: height .2s;
+    -moz-transition: height .2s;
+    -ms-transition: height .2s;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
+}
+
+.qui-textArea .autoHeight {
+    overflow: hidden
+}
+
+.qui-inputAutocomplete {
+    position: absolute;
+    z-index: 1100;
+    background-color: #fff;
+    border: 1px solid #eee
+}
+
+.qui-inputAutocomplete-ul li {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: solid 1px #eee;
+    background-color: #fff;
+    cursor: pointer;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.qui-inputAutocomplete-ul li:hover, .qui-inputAutocomplete-ul li[data-select=true] {
+    background-color: #e0f1de
+}
+
+.qui-inputAutocomplete-ul li.disableDefalut {
+    background-color: #fff !important;
+    cursor: default
+}
+
+.qui-inputAutocomplete-noResult {
+    color: red
+}
+
+.qyer_inputAutocomplete_name {
+    padding: 0 5px 0 10px
+}
+
+.qyer_inputAutocomplete_name .current {
+    color: #077345
+}
+
+.qyer_inputAutocomplete_en {
+    padding-right: 10px;
+    font-family: Tahoma, Geneva, sans-serif
+}
+
+.qyer_inputAutocomplete_found {
+    color: #959595;
+    padding-right: 10px
+}
+
+.qyer_inputAutocomplete_creat {
+    padding: 10px
+}
+
+.qui-errorip-textDiv1 > .tip > p, .qui-errorip-textDiv > .tip > p {
+    position: absolute;
+    width: 0;
+    height: 0
+}
+
+.qui-errorip {
+    border: 1px solid #d0312b !important
+}
+
+.qui-errorip-textDiv {
+    border: 1px solid #d0312b;
+    background-color: #ffcccd;
+    color: #88777c;
+    position: absolute;
+    z-index: 2000
+}
+
+.qui-errorip-textDiv > .tip {
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 0
+}
+
+.qui-errorip-textDiv > .tip > .a1, .qui-errorip-textDiv > .tip > .a2 {
+    left: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent
+}
+
+.qui-errorip-textDiv > .tip > .a1 {
+    top: -5px;
+    border-bottom: 5px solid #CB0013
+}
+
+.qui-errorip-textDiv > .tip > .a2 {
+    top: -4px;
+    border-bottom: 5px solid #FFCCCD
+}
+
+.qui-errorip-textDiv > .text {
+    padding: 0 5px
+}
+
+.qui-errorip-textDiv1 {
+    border: 1px solid #ebb75a;
+    background-color: #fff894;
+    color: #222;
+    position: absolute;
+    z-index: 2000;
+    border-radius: 3px
+}
+
+.qui-errorip-textDiv1 > .tip {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px
+}
+
+.qui-errorip-textDiv1 > .tip > .a1, .qui-errorip-textDiv1 > .tip > .a2 {
+    left: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent
+}
+
+.qui-errorip-textDiv1 > .tip > .a1 {
+    top: -4px;
+    border-top: 5px solid #ebb75a
+}
+
+.qui-errorip-textDiv1 > .tip > .a2 {
+    top: -5px;
+    border-top: 5px solid #fff894
+}
+
+.qui-errorip-textDiv1 > .text {
+    max-width: 300px;
+    overflow: hidden;
+    padding: 0 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.qui-openAskContainer .fz12 {
+    font-size: 12px
+}
+
+.qui-openAskContainer .vm {
+    vertical-align: middle
+}
+
+.qui-openAskContainer .bs {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
+}
+
+.qui-openAskContainer .p20 {
+    padding: 0 20px
+}
+
+.qui-openAskContainer .mt20 {
+    margin-top: 20px
+}
+
+.qui-openAskContainer .qui-popup-box-content {
+    padding: 0
+}
+
+.qui-openAskContainer .disableDefalut, .qui-openAskContainer .hide, .qui-openAskContainer .qui-popup-box-bottom {
+    display: none
+}
+
+.qui-openAskContainer .qui-textArea {
+    display: block;
+    margin-top: 10px
+}
+
+.qui-openAskContainer .qui-textArea input, .qui-openAskContainer .qui-textArea textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 14px
+}
+
+.qui-openAskContainer .qui-textArea textarea {
+    line-height: 1.5
+}
+
+.qui-openAskContainer .qui-textArea input {
+    line-height: 1
+}
+
+.qui-openAskContainer .qui-textArea .tips {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #959595
+}
+
+.qui-openAskContainer .openAsk-askTitle {
+    font-size: 18px;
+    line-height: 20px
+}
+
+.qui-openAskContainer .openAsk-title {
+    height: 32px
+}
+
+.qui-openAskContainer .openAsk-content {
+    height: 128px
+}
+
+.qui-openAskContainer .openAsk-contentTitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 40px
+}
+
+.qui-openAskContainer .tags {
+    height: 48px;
+    margin-top: 60px;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    background: #e0f1df;
+    position: relative;
+    z-index: 101;
+    font-size: 0
+}
+
+.qui-openAskContainer .tags .btn-tag-close, .qui-openAskContainer .tags .tag, .qui-openAskContainer .tags .tag-input-ribbon, .qui-openAskContainer .tags .tag-item, .qui-openAskContainer .tags .tag-title {
+    display: inline-block
+}
+
+.qui-openAskContainer .tags .tag-title {
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px
+}
+
+.qui-openAskContainer .tags .tag-item {
+    float: none;
+    margin-right: 10px;
+    font-size: 12px
+}
+
+.qui-openAskContainer .tags .tag-item .tag {
+    float: left;
+    padding: 0 5px 0 12px;
+    line-height: 24px;
+    background: url(//fed.static.qyer.com/core/web/common/resources/component/openAsk/images/two/tag_bg.png) no-repeat;
+    color: #FFF;
+    max-width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.qui-openAskContainer .tags .tag-item .btn-tag-close {
+    float: left;
+    width: 22px;
+    height: 24px;
+    background: url(//fed.static.qyer.com/core/web/common/resources/component/openAsk/images/two/tag_bg.png) left -30px no-repeat;
+    cursor: pointer
+}
+
+.qui-openAskContainer .tags .tag-item .btn-tag-close:hover {
+    background-position: left -60px
+}
+
+.qui-openAskContainer .tags .tag-input-ribbon em {
+    padding: 0 6px;
+    font-size: 12px
+}
+
+.qui-openAskContainer .tags .tag-input-ribbon input {
+    width: 120px;
+    height: 22px;
+    padding: 0 6px;
+    font-size: 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    line-height: 1
+}
+
+.qui-openAskContainer .ask-bottom-box {
+    position: relative;
+    padding: 20px;
+    height: 70px
+}
+
+.qui-openAskContainer .ask-bottom-box .publish-box {
+    position: relative;
+    float: left;
+    border: 1px solid silver;
+    padding: 0 50px 0 10px;
+    line-height: 22px;
+    cursor: pointer
+}
+
+.qui-openAskContainer .ask-bottom-box .publish-box:hover {
+    border: 1px solid #999
+}
+
+.qui-openAskContainer .ask-bottom-box .publish-box .publish-arrow {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 4px solid transparent;
+    border-top-color: #959595;
+    border-bottom-width: 0;
+    cursor: pointer
+}
+
+.qui-openAskContainer .ask-bottom-box .publish-box.open .publish-arrow {
+    border: 4px solid transparent;
+    border-bottom-color: #959595;
+    border-top-width: 0
+}
+
+.qui-openAskContainer .bbs-container {
+    position: absolute;
+    top: -357px;
+    white-space: nowrap;
+    font-size: 0;
+    z-index: 2001;
+    border: 1px solid silver;
+    background-color: #FFF;
+    padding: 10px 30px 10px 10px;
+    overflow: hidden
+}
+
+.qui-openAskContainer .bbs-container .item {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    margin-bottom: -30px;
+    font-size: 12px
+}
+
+.qui-openAskContainer .bbs-container .item:first-child {
+    padding-left: 0
+}
+
+.qui-openAskContainer .bbs-container dl {
+    margin-bottom: 30px
+}
+
+.qui-openAskContainer .bbs-container dt {
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 14px
+}
+
+.qui-openAskContainer .bbs-container a {
+    display: block;
+    line-height: 24px;
+    padding: 0 6px;
+    color: #636363
+}
+
+.qui-openAskContainer .bbs-container a:hover {
+    background-color: #ececec;
+    color: #0073b6;
+    text-decoration: none
+}
+
+.qui-inputAutocomplete .qui-inputAutocomplete-noResult {
+    padding-left: 6px;
+    border: 1px solid #d7d7d7;
+    line-height: 22px;
+    color: #959595;
+    font-size: 12px
+}
