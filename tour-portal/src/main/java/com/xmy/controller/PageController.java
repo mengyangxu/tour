@@ -31,6 +31,11 @@ public class PageController {
     public String login(){
         return "login";
     }
+
+    @RequestMapping("toup")
+    public String upload(){
+        return "fileup";
+    }
     /*
     @RequestMapping("/logined")
     public String logined(User user, HttpSession session, Model model){
