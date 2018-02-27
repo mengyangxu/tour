@@ -1,4 +1,4 @@
-package com.xmy.config;
+package com.xmy.service.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

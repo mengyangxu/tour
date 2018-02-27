@@ -1,4 +1,4 @@
-package com.xmy.config;
+package com.xmy.service.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;

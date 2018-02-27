@@ -1,4 +1,4 @@
-package com.xmy;
+package com.xmy.portal;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TourServiceApplicationTests {
+public class TourPortalApplicationTests {
 
 	@Test
 	public void contextLoads() {

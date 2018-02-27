@@ -1,4 +1,4 @@
-package com.xmy.controller;
+package com.xmy.portal.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -27,9 +27,19 @@ public class PageController {
         return "index";
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("/tologin")
     public String login(){
         return "login";
+    }
+
+    @RequestMapping("/toregister")
+    public String regist(){
+        return "register";
+    }
+
+    @RequestMapping("/toforgot")
+    public String forgot(){
+        return "forgot";
     }
 
     @RequestMapping("toup")
