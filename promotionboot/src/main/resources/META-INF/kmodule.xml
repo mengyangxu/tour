@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.drools.org/xsd/kmodule">
+
+    <kbase name="rule1KB" packages="com.jmm.drools.rule.rule1">
+        <ksession name="rule1KS"/>
+    </kbase>
+
+    <kbase name="rule2KB" packages="com.jmm.drools.rule.rule2">
+        <ksession name="rule2KS"/>
+    </kbase>
+    
+     <kbase name="rule3KB" packages="com.jmm.drools.rule.rule3">
+        <ksession name="rule3KS"/>
+    </kbase>
+
+    <kbase name="mingKB" packages="com.jmm.drools.rule.complexProblem">
+        <ksession name="mingKS"/>
+    </kbase>
+
+    <kbase name="worldKB" packages="com.jmm.drools.rule.complexProblem">
+        <ksession name="worldKS"/>
+    </kbase>
+
+    <kbase name="HonestPoliticianKB" packages="com.jmm.drools.rule.honestpolitician">
+        <ksession name="HonestPoliticianKS"/>
+    </kbase>
+</kmodule>

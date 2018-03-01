@@ -1,0 +1,40 @@
+server:
+  port: 8085
+logging:
+  config: classpath:log4j2.xml
+#quartz开关
+#quartz:
+#  enabled: true
+#  profiles: prod  
+eureka:
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:9099/eureka/
+management:
+  security:
+    enabled: false       
+spring:
+    application:
+      name: promotion  
+    datasource:
+            driver-class-name: com.mysql.jdbc.Driver
+            type: com.alibaba.druid.pool.DruidDataSource
+            druid:
+              url: jdbc:mysql://rm-uf653o6i83282c76t.mysql.rds.aliyuncs.com:3306/csh?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&useSSL=false&allowMultiQueries=true
+              username: runroot
+              password: i#o8wh&sps4d
+              initial-size: 5
+              max-active: 50
+              min-idle: 5
+              # 配置获取连接等待超时的时间
+              max-wait: 60000
+              pool-prepared-statements: true
+              max-pool-prepared-statement-per-connection-size: 20
+              validation-query: SELECT 1
+              test-on-borrow: false
+              test-on-return: false
+              test-while-idle: true
+              min-evictable-idle-time-millis: 300000
+              time-between-eviction-runs-millis: 300000
+              filters: stat
+              connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000

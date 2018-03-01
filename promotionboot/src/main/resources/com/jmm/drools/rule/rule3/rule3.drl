@@ -1,0 +1,11 @@
+package com.jmm.drools;
+ import com.jmm.drools.bean.Promotion;
+ import com.jmm.drools.bean.Order;
+ import com.jmm.drools.bean.OrderItem;
+ import function com.jmm.drools.service.PromotionService.resultOrder;
+ rule "3"
+ 	when
+ 	$promotion:Promotion(proConType=='1'&&proThreshold>=8000&&productId==1243324212&&bankId==12345678901&&$order:Order())
+ 	then
+ 	resultOrder($order,$promotion)
+ end

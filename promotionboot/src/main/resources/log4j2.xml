@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss}|%X{ThreadID}|%p|%c{1}|%m%n</Property>
+        <property name="LOG_HOME">./log</property>
+        <property name="INFO_HOME">/info</property>
+        <property name="ERROR_HOME">/error</property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+         <File name="File" fileName="${LOG_HOME}${INFO_HOME}/promotions.log" append="true">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.hibernate.validator.internal.util.Version" level="warn" />
+        <!-- Logger name="org.apache.coyote.http11.Http11NioProtocol" level="warn" /-->
+        <logger name="org.springframework.web" level="info"/>
+        <logger name="com.jmm.drools.dao" level="debug"/>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>
